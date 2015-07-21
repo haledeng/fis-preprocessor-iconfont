@@ -1,0 +1,29 @@
+{
+  "name": "fis-preprocessor-iconfont",
+  "version": "1.0.0",
+  "description": "fis iconfont sulution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/haledeng/fis-preprocessor-iconfont"
+  },
+  "keywords": [
+    "fis",
+    "iconfont"
+  ],
+  "author": {
+    "name": "helondeng",
+    "email": "dhlwust@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haledeng/fis-preprocessor-iconfont.git"
+  },
+  "readmeFilename": "README.md",
+  "license": "BSD",
+  "dependencies": {
+  }
+}
