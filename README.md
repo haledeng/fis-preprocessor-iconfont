@@ -5,7 +5,9 @@ npm install -g fis-preprocessor-iconfont
 
 === 
 ### 背景
+
 项目中使用iconfont时，需要先用工具将 SVG 转化成 font 字体文件，同时解决引入的问题，整个流程比较繁琐。
+
 === 
 ### 目标
 在 html 标签上挂载和 svg 同名（或者有映射关系）的类名，构建解决：
