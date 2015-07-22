@@ -41,9 +41,9 @@ function genarateFonts(files, output, svgPath){
     });
 
     return {
-        iconContents: iconContents,
-        fontContent: content,
-        iconNames: iconNames
+        iconContents: iconContents, // content 
+        fontContent: content, // 字体文件{ttf: xxx, woff: xxx}
+        iconNames: iconNames // icon名字，和svg 名字，类名有对应关系
     }
 }
 
@@ -108,8 +108,6 @@ function generateDemo(){
 *   3. 记录依赖关系，postPackager再处理
 */
 module.exports = function(content, file, settings){
-/*    console.log(settings);
-    console.log(file.toString())*/
     var projectPath = fis.project.getProjectPath(),
         svgPath = path.join(projectPath, settings.svgPath),
         fontOutPath = path.join(projectPath, settings.fontOutPath),
@@ -123,6 +121,7 @@ module.exports = function(content, file, settings){
             css: path.join(projectPath, settings.cssOutPath)
         });
 
+    // TODO: 每个css文件都加入了 iconfont 的引用
     var cssPath = file.toString();
     // path.relative 
     content += css.replace('{{$path}}', path.relative(path.dirname(cssPath), fontOutPath + '.ttf').replace(/\\/g, '\/'))
