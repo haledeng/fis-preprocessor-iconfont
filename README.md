@@ -34,3 +34,6 @@ preprocessor: {
 }
 ```
 
+### TODO
+tpl 模版中引入的iconfont没有处理。
+这里需要分析相应的依赖关系，解析html以来的tpl文件，查找iconfont，然后添加到html中。
